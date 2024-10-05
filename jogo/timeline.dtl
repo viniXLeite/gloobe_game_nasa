@@ -1,0 +1,14 @@
+[background arg="res://background aleatorio.jpg" fade="0.0"]
+join p1 (p1) left [animation="Slide In Left" length="3.2"]
+if false == true:
+	ola \
+tudo bem
+- ok
+	ola \\
+tudo bem
+- no
+	[background arg="res://fef2113df8cf89cdefa22d913516abc8.jpg" fade="1.1"]
+	set {temperature} += 3.1
+	ola \\\
+tudo bem {temperature}
+	[style]
