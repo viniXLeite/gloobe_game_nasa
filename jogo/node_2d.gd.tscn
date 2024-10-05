@@ -1,9 +1,13 @@
 [gd_scene load_steps=2 format=3 uid="uid://c8wae10rj32iq"]
 
-[ext_resource type="Script" path="res://node_2d.gd.gd" id="1_q2b6o"]
+[ext_resource type="Texture2D" uid="uid://dyes8dxqkb8fj" path="res://addons/dialogic/background aleatorio.jpg" id="1_yua6p"]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2(479, 245)
-script = ExtResource("1_q2b6o")
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="BackgroundAleatorio" type="Sprite2D" parent="."]
+position = Vector2(586, 323)
+scale = Vector2(1.94667, 1.88333)
+texture = ExtResource("1_yua6p")
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
