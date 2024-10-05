@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqfw4si766t0o"
-path="res://.godot/imported/background aleatorio.jpg-e37e47c60a809152d14fa854a0a93110.ctex"
+uid="uid://cvnael3e11qvx"
+path="res://.godot/imported/Emil plushie.jpg-01ccc5a37c5ee13f899f49dfb0b7ed9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background aleatorio.jpg"
-dest_files=["res://.godot/imported/background aleatorio.jpg-e37e47c60a809152d14fa854a0a93110.ctex"]
+source_file="res://assets/images/Emil plushie.jpg"
+dest_files=["res://.godot/imported/Emil plushie.jpg-01ccc5a37c5ee13f899f49dfb0b7ed9a.ctex"]
 
 [params]
 

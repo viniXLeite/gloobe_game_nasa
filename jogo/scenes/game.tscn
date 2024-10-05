@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://nxl5xh6s3noo"]
+
+[ext_resource type="Texture2D" uid="uid://cvnael3e11qvx" path="res://assets/images/Emil plushie.jpg" id="1_khbl8"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Protag" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Protag"]
+position = Vector2(936, 473)
+scale = Vector2(0.528333, 0.44)
+texture = ExtResource("1_khbl8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="Furnitures" type="Node" parent="."]
