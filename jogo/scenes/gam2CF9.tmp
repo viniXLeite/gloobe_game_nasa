@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://nxl5xh6s3noo"]
+
+[ext_resource type="AudioStream" uid="uid://cblbreiphqtcd" path="res://assets/songs/possivel_musica_suspense.mp3" id="2_k8hq0"]
+[ext_resource type="PackedScene" uid="uid://0rqdhhidmkds" path="res://scenes/npc.tscn" id="3_egtaj"]
+[ext_resource type="PackedScene" uid="uid://bo662w6to0t1q" path="res://scenes/protag.tscn" id="4_is8ad"]
+[ext_resource type="Texture2D" uid="uid://bqfw4si766t0o" path="res://assets/images/background aleatorio.jpg" id="4_n56qp"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Ground" type="CollisionPolygon2D" parent="."]
+top_level = true
+position = Vector2(581, 483)
+polygon = PackedVector2Array(-13, -20, -770, -20, -771, 63, 730, 74, 730, -14)
+
+[node name="Background" type="Label" parent="."]
+show_behind_parent = true
+offset_left = 505.0
+offset_top = 165.0
+offset_right = 545.0
+offset_bottom = 188.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(70, 159)
+scale = Vector2(1.92, 1.79444)
+texture = ExtResource("4_n56qp")
+
+[node name="Npc\'s" type="Node" parent="."]
+
+[node name="Npc" parent="Npc\'s" instance=ExtResource("3_egtaj")]
+top_level = true
+position = Vector2(496, 350)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="Furnitures" type="Node" parent="."]
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(577, 311)
+stream = ExtResource("2_k8hq0")
+autoplay = true
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("4_is8ad")]
+position = Vector2(955, 302)
