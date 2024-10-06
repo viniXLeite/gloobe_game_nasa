@@ -4,7 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://cblbreiphqtcd" path="res://assets/songs/possivel_musica_suspense.mp3" id="2_k8hq0"]
 [ext_resource type="PackedScene" uid="uid://0rqdhhidmkds" path="res://scenes/npc.tscn" id="3_egtaj"]
 [ext_resource type="PackedScene" uid="uid://bo662w6to0t1q" path="res://scenes/protag.tscn" id="4_is8ad"]
-[ext_resource type="Texture2D" uid="uid://bqfw4si766t0o" path="res://assets/images/background aleatorio.jpg" id="4_n56qp"]
+[ext_resource type="Script" path="res://scenes/status.gd" id="5_w1qrc"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_axmxk")
@@ -19,7 +19,6 @@ offset_bottom = 188.0
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
 position = Vector2(70, 159)
 scale = Vector2(1.92, 1.79444)
-texture = ExtResource("4_n56qp")
 
 [node name="Npc\'s" type="Node" parent="."]
 
@@ -40,6 +39,12 @@ stream = ExtResource("2_k8hq0")
 autoplay = true
 
 [node name="Protag" parent="." instance=ExtResource("4_is8ad")]
+unique_name_in_owner = true
 position = Vector2(941, 301)
 motion_mode = 1
 script = null
+
+[node name="Dinheiro" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("5_w1qrc")
