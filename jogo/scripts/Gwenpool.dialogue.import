@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://8d5ttj0xdsxw"
+path="res://.godot/imported/Gwenpool.dialogue-69307a1a60de4d415cc491ec96496d22.tres"
+
+[deps]
+
+source_file="res://scripts/Gwenpool.dialogue"
+dest_files=["res://.godot/imported/Gwenpool.dialogue-69307a1a60de4d415cc491ec96496d22.tres"]
+
+[params]
+
+defaults=true

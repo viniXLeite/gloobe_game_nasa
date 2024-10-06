@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://0rqdhhidmkds"]
+
+[ext_resource type="Script" path="res://scripts/npc.gd" id="1_x1q8y"]
+[ext_resource type="Texture2D" uid="uid://deda28q36fxsa" path="res://assets/images/gwenpool nendoroid.jpg" id="2_evxfn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0htgl"]
+size = Vector2(246, 230)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y0a5l"]
+radius = 116.276
+
+[node name="Npc" type="CharacterBody2D"]
+position = Vector2(585, 449)
+script = ExtResource("1_x1q8y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 2)
+scale = Vector2(0.498, 0.468)
+texture = ExtResource("2_evxfn")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_0htgl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_y0a5l")

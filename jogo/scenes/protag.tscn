@@ -1,10 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://yt0at67iofsy"]
+[gd_scene load_steps=5 format=3 uid="uid://bo662w6to0t1q"]
 
+[ext_resource type="Script" path="res://protag.gd" id="1_iys6n"]
 [ext_resource type="Texture2D" uid="uid://cvnael3e11qvx" path="res://assets/images/Emil plushie.jpg" id="1_m3lhy"]
 
-[node name="Protag" type="StaticBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_3fphr"]
+radius = 371.194
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26fsx"]
+size = Vector2(1260, 606)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(1720, 732)
+script = ExtResource("1_iys6n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_3fphr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(934, 454)
-scale = Vector2(0.498333, 0.41)
+position = Vector2(1.99998, -0.999985)
+scale = Vector2(0.5, 0.541667)
 texture = ExtResource("1_m3lhy")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-2, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-171, -29)
+shape = SubResource("RectangleShape2D_26fsx")
