@@ -9,5 +9,4 @@ Gwenpool: [[Bom dia | Boa tarde]] senhor! Temos muita produção mas pouco escoa
 	Gwenpool: You lost {{Protag.get_status_count("money")}} dollars...
 	=> END
 Gwenpool: AAAAAAAAAAAAAAAA
-
 => END

@@ -19,6 +19,7 @@ config/features=PackedStringArray("4.3", "Forward Plus")
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Protag="*res://scripts/protag.gd"
+Npc="*res://scripts/npc.gd"
 
 [dialogic]
 
