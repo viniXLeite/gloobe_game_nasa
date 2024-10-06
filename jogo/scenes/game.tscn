@@ -28,7 +28,7 @@ texture = ExtResource("4_n56qp")
 
 [node name="Npc" parent="Npc\'s" instance=ExtResource("3_egtaj")]
 top_level = true
-position = Vector2(496, 350)
+position = Vector2(673, 353)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 324)
@@ -41,4 +41,5 @@ stream = ExtResource("2_k8hq0")
 autoplay = true
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("4_is8ad")]
-position = Vector2(955, 302)
+position = Vector2(984, 316)
+script = null
