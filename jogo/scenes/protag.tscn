@@ -1,21 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://bo662w6to0t1q"]
+[gd_scene load_steps=4 format=3 uid="uid://bo662w6to0t1q"]
 
 [ext_resource type="Script" path="res://scripts/protag.gd" id="1_iys6n"]
 [ext_resource type="Texture2D" uid="uid://cvnael3e11qvx" path="res://assets/images/Emil plushie.jpg" id="1_m3lhy"]
-[ext_resource type="PackedScene" uid="uid://d1c1hdtgf41vc" path="res://scenes/actionable.tscn" id="3_aa5r7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aggfr"]
-size = Vector2(295, 282)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_hps0d"]
-radius = 365.088
+size = Vector2(298, 289)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(1720, 732)
 script = ExtResource("1_iys6n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2.5, -14)
+position = Vector2(1, -17.5)
 shape = SubResource("RectangleShape2D_aggfr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -23,9 +19,4 @@ position = Vector2(1.99998, -0.999985)
 scale = Vector2(0.5, 0.541667)
 texture = ExtResource("1_m3lhy")
 
-[node name="Actionable" parent="." instance=ExtResource("3_aa5r7")]
-scale = Vector2(1.11323, 0.992788)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Actionable"]
-scale = Vector2(0.996546, 1)
-shape = SubResource("CircleShape2D_hps0d")
+[node name="Area2D" type="Area2D" parent="."]

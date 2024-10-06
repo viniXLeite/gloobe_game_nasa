@@ -1,10 +1,12 @@
 ~ start
 
-Gwenpool: [[hello | hehe]] ?
-- HI.
-	Gwenpool: :(
-- HIIIIIIIIIIIIIIIIIIIIIIIII.
-	Gwenpool: :)
+Gwenpool: [[Bom dia | Boa tarde]] senhor! Temos muita produção mas pouco escoamento de produtos! Devemos expandir nossas linhas ferroviárias? Aquele mato todo? Não se preocupem, cuidamos disso!
+- Com certeza!
+	do Protag.status["money"] += 100
+	Gwenpool: You gained {{Protag.get_status_count("money")}} dollars!
+- Não dessa vez...
+	do Protag.status["money"] -= 100
+	Gwenpool: You lost {{Protag.get_status_count("money")}} dollars...
 	=> END
 Gwenpool: AAAAAAAAAAAAAAAA
 

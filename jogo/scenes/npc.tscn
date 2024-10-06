@@ -1,15 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://0rqdhhidmkds"]
+[gd_scene load_steps=4 format=3 uid="uid://0rqdhhidmkds"]
 
 [ext_resource type="Script" path="res://scripts/npc.gd" id="1_x1q8y"]
 [ext_resource type="Texture2D" uid="uid://deda28q36fxsa" path="res://assets/images/gwenpool nendoroid.jpg" id="2_evxfn"]
-[ext_resource type="PackedScene" uid="uid://d1c1hdtgf41vc" path="res://scenes/actionable.tscn" id="3_pb5k1"]
-[ext_resource type="Resource" uid="uid://8d5ttj0xdsxw" path="res://scripts/Gwenpool.dialogue" id="4_00n6v"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_y0a5l"]
-radius = 125.016
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_paaqt"]
-radius = 137.675
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2her1"]
+size = Vector2(264.353, 261.514)
 
 [node name="Npc" type="CharacterBody2D"]
 position = Vector2(585, 449)
@@ -21,17 +16,6 @@ scale = Vector2(0.498, 0.468)
 texture = ExtResource("2_evxfn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.71783, 2.02707)
 scale = Vector2(0.94357, 0.894584)
-shape = SubResource("CircleShape2D_y0a5l")
-
-[node name="Actionable" parent="." instance=ExtResource("3_pb5k1")]
-scale = Vector2(0.999191, 0.995883)
-dialogue_resource = ExtResource("4_00n6v")
-
-[node name="ActionableFinder" type="Area2D" parent="Actionable"]
-collision_layer = 0
-collision_mask = 16
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionable/ActionableFinder"]
-scale = Vector2(1.01907, 1)
-shape = SubResource("CircleShape2D_paaqt")
+shape = SubResource("RectangleShape2D_2her1")
