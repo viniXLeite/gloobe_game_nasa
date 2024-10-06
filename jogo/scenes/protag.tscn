@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bo662w6to0t1q"]
+[gd_scene load_steps=3 format=3 uid="uid://bo662w6to0t1q"]
 
 [ext_resource type="Script" path="res://scripts/protag.gd" id="1_iys6n"]
-[ext_resource type="Texture2D" uid="uid://cvnael3e11qvx" path="res://assets/images/Emil plushie.jpg" id="1_m3lhy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aggfr"]
 size = Vector2(298, 289)
@@ -15,8 +14,7 @@ position = Vector2(1, -17.5)
 shape = SubResource("RectangleShape2D_aggfr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1.99998, -0.999985)
-scale = Vector2(0.5, 0.541667)
-texture = ExtResource("1_m3lhy")
+position = Vector2(-5.72205e-06, -18)
+scale = Vector2(0.826666, 0.808889)
 
 [node name="Area2D" type="Area2D" parent="."]
