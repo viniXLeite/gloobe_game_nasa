@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://0rqdhhidmkds"]
 
 [ext_resource type="Script" path="res://scripts/npc.gd" id="1_x1q8y"]
-[ext_resource type="Texture2D" uid="uid://obk76tfv1oca" path="res://assets/images/Assistance.png" id="2_apr80"]
+[ext_resource type="Texture2D" uid="uid://c6esvckik7s5s" path="res://assets/images/Research.png" id="2_yek71"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2her1"]
 size = Vector2(264.353, 261.514)
@@ -13,7 +13,7 @@ script = ExtResource("1_x1q8y")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(2.99997, 1.00003)
 scale = Vector2(0.907918, 0.942778)
-texture = ExtResource("2_apr80")
+texture = ExtResource("2_yek71")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 9.53674e-07)

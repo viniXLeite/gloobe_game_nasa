@@ -1,10 +1,10 @@
 extends CharacterBody2D
 
 var status = {
-	"money": 100,
-	"polution": 100,
-	"temperature": 100,
-	"biodiversity": 100
+	"money": 145,
+	"polution": 105,
+	"temperature": 111,
+	"biodiversity": 80
 }
 
 func get_status_count(item):
