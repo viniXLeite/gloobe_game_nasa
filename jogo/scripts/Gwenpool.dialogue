@@ -1,12 +1,68 @@
-~ start
+~ startTutorial
+Assistant: [[Good morning | Good evening]] sir! I am going to help you manage your businesses. But you have to make the tough choices, understood?
+- I'm ready!
+- Alright.
+Assistant: Good luck!
+=> END
 
-Gwenpool: [[Bom dia | Boa tarde]] senhor! Temos muita produção mas pouco escoamento de produtos! Devemos expandir nossas linhas ferroviárias? Aquele mato todo? Não se preocupem, cuidamos disso!
-- Com certeza!
-	do Protag.status["money"] += 100
-	Gwenpool: You gained {{Protag.get_status_count("money")}} dollars!
-- Não dessa vez...
-	do Protag.status["money"] -= 100
-	Gwenpool: You lost {{Protag.get_status_count("money")}} dollars...
-	=> END
-Gwenpool: AAAAAAAAAAAAAAAA
+~ startOperations
+
+Operations Manager: Good morning sir, glad to have you back! The production is achieving promising results, however, we are running out of space to dispose of the waste. Should we dispose it in the river to avoid extra costs?
+- Go ahead.
+	do Protag.status["money"] += 15
+	do Protag.status["polution"] += 10
+	do Protag.status["biodiversity"] -= 10
+
+- No, we can afford it.
+	do Protag.status["money"] += 5
+	do Protag.status["polution"] -= 1
+	do Protag.status["biodiversity"] += 1
+Operations Manager: As you wish!
+Your progress: Cash: {{Protag.get_status_count("money")}}
+Ecological footprint: {{Protag.get_status_count("polution")}}
+Temperature: {{Protag.get_status_count("temperature")}} 
+Biodiversity: {{Protag.get_status_count("biodiversity")}}
+=> END
+
+~ startSales
+
+Sales Head: Good evening sir, we are at full production, but limited product turnover. Should we expand our rail network? Oh, that bushes? Don't worry about it, we handle this!
+- Do it.
+	do Protag.status["money"] += 30
+	do Protag.status["temperature"] += 1
+	do Protag.status["polution"] += 5
+	do Protag.status["biodiversity"] -= 10
+
+- We don't need this.
+	do Protag.status["money"] += 5
+	do Protag.status["temperature"] -= 1
+	do Protag.status["polution"] -= 1
+	do Protag.status["biodiversity"] += 1
+
+Sales Head: As you wish!
+Your progress: Cash: {{Protag.get_status_count("money")}}
+Ecological footprint: {{Protag.get_status_count("polution")}}
+Temperature: {{Protag.get_status_count("temperature")}} 
+Biodiversity: {{Protag.get_status_count("biodiversity")}}
+=> END
+
+~ startResearch
+
+Head of Research: Sir, I am afraid that our mining tunnels are unstable and could erode and contaminate the soil around the area! We must slow down our efforts there!
+- Absolutely.
+	do Protag.status["money"] += 0
+	do Protag.status["temperature"] += 0
+	do Protag.status["polution"] -= 1
+	do Protag.status["biodiversity"] += 1
+	Head of Research: Thank you sir!
+- I don't see the need.
+	do Protag.status["money"] += 45
+	do Protag.status["temperature"] -= 0
+	do Protag.status["polution"] += 20
+	do Protag.status["biodiversity"] -= 20
+	Head of Research: ...
+Your progress: Cash: {{Protag.get_status_count("money")}}
+Ecological footprint: {{Protag.get_status_count("polution")}}
+Temperature: {{Protag.get_status_count("temperature")}} 
+Biodiversity: {{Protag.get_status_count("biodiversity")}}
 => END

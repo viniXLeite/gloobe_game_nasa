@@ -1,21 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://0rqdhhidmkds"]
 
 [ext_resource type="Script" path="res://scripts/npc.gd" id="1_x1q8y"]
-[ext_resource type="Texture2D" uid="uid://deda28q36fxsa" path="res://assets/images/gwenpool nendoroid.jpg" id="2_evxfn"]
+[ext_resource type="Texture2D" uid="uid://obk76tfv1oca" path="res://assets/images/Assistance.png" id="2_apr80"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2her1"]
 size = Vector2(264.353, 261.514)
 
 [node name="Npc" type="CharacterBody2D"]
-position = Vector2(585, 449)
+position = Vector2(605, 449)
 script = ExtResource("1_x1q8y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1, 2)
-scale = Vector2(0.498, 0.468)
-texture = ExtResource("2_evxfn")
+position = Vector2(2.99997, 1.00003)
+scale = Vector2(0.907918, 0.942778)
+texture = ExtResource("2_apr80")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.71783, 2.02707)
+position = Vector2(1, 9.53674e-07)
 scale = Vector2(0.94357, 0.894584)
 shape = SubResource("RectangleShape2D_2her1")

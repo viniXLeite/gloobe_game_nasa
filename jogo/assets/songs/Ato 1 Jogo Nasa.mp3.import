@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://co082yl08mfgk"
+path="res://.godot/imported/Ato 1 Jogo Nasa.mp3-633fc5dc1715bb34c7c6e13b6cb36f75.mp3str"
+
+[deps]
+
+source_file="res://assets/songs/Ato 1 Jogo Nasa.mp3"
+dest_files=["res://.godot/imported/Ato 1 Jogo Nasa.mp3-633fc5dc1715bb34c7c6e13b6cb36f75.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

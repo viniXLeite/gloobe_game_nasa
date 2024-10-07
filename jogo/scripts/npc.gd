@@ -10,6 +10,6 @@ func _physics_process(delta):
 	
 	if collision:
 		velocity.x = 0
-		DialogueManager.show_example_dialogue_balloon(load("res://scripts/Gwenpool.dialogue"), "start")
+		DialogueManager.show_example_dialogue_balloon(load("res://scripts/Gwenpool.dialogue"), "startTutorial")
 	if Input.is_action_just_pressed("ui_right"):
 		velocity.x = -200

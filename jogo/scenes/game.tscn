@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://nxl5xh6s3noo"]
 
-[ext_resource type="Script" path="res://scenes/global.gd" id="1_axmxk"]
-[ext_resource type="Texture2D" uid="uid://diqh16dpqor1i" path="res://assets/images/Status.png" id="2_8ahym"]
-[ext_resource type="AudioStream" uid="uid://cblbreiphqtcd" path="res://assets/songs/possivel_musica_suspense.mp3" id="2_k8hq0"]
+[ext_resource type="Script" path="res://scripts/global.gd" id="1_axmxk"]
+[ext_resource type="Texture2D" uid="uid://dkhwyjhcpdqwn" path="res://assets/images/Janela de Status.png" id="2_dkyjt"]
 [ext_resource type="Texture2D" uid="uid://coqtni0452dn6" path="res://assets/images/Fundo 1 cidade bonita.png" id="3_47gy0"]
 [ext_resource type="PackedScene" uid="uid://0rqdhhidmkds" path="res://scenes/npc.tscn" id="3_egtaj"]
 [ext_resource type="PackedScene" uid="uid://bo662w6to0t1q" path="res://scenes/protag.tscn" id="4_is8ad"]
-[ext_resource type="Script" path="res://scenes/game_manager.gd" id="7_diwdn"]
-[ext_resource type="FontFile" uid="uid://itb6t7um87gq" path="res://assets/Minecraft.ttf" id="8_0jrni"]
+[ext_resource type="AudioStream" uid="uid://co082yl08mfgk" path="res://assets/songs/Ato 1 Jogo Nasa.mp3" id="5_2f73r"]
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="7_diwdn"]
+[ext_resource type="FontFile" uid="uid://itb6t7um87gq" path="res://assets/images/Minecraft.ttf" id="8_0jrni"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_axmxk")
@@ -21,9 +21,9 @@ offset_bottom = 188.0
 
 [node name="Sprite2D" type="Sprite2D" parent="StatusWindow"]
 top_level = true
-position = Vector2(159, 110)
-scale = Vector2(0.318091, 0.309106)
-texture = ExtResource("2_8ahym")
+position = Vector2(150, 85)
+scale = Vector2(1.11111, 0.933333)
+texture = ExtResource("2_dkyjt")
 
 [node name="Background" type="Label" parent="."]
 offset_left = 3.0
@@ -40,7 +40,7 @@ texture = ExtResource("3_47gy0")
 
 [node name="Npc" parent="Npc\'s" instance=ExtResource("3_egtaj")]
 top_level = true
-position = Vector2(-132, 444)
+position = Vector2(-133, 472)
 motion_mode = 1
 safe_margin = 0.001
 
@@ -51,12 +51,12 @@ position = Vector2(576, 324)
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(577, 311)
-stream = ExtResource("2_k8hq0")
+stream = ExtResource("5_2f73r")
 autoplay = true
 
 [node name="Protag" parent="." instance=ExtResource("4_is8ad")]
 unique_name_in_owner = true
-position = Vector2(857, 436)
+position = Vector2(582, 453)
 motion_mode = 1
 script = null
 
@@ -65,40 +65,40 @@ unique_name_in_owner = true
 script = ExtResource("7_diwdn")
 
 [node name="Temperatura" type="Label" parent="Game_manager"]
-offset_left = 62.0
-offset_top = 68.0
-offset_right = 309.0
-offset_bottom = 108.0
+offset_left = 59.0
+offset_top = 49.0
+offset_right = 221.0
+offset_bottom = 89.0
 theme_override_fonts/font = ExtResource("8_0jrni")
 theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Polution" type="Label" parent="Game_manager"]
-offset_left = 60.0
-offset_top = 119.0
-offset_right = 299.0
-offset_bottom = 159.0
+offset_left = 59.0
+offset_top = 87.0
+offset_right = 222.0
+offset_bottom = 127.0
 theme_override_fonts/font = ExtResource("8_0jrni")
 theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Biodiversity" type="Label" parent="Game_manager"]
-offset_left = 66.0
-offset_top = 172.0
-offset_right = 297.0
-offset_bottom = 212.0
+offset_left = 57.0
+offset_top = 126.0
+offset_right = 222.0
+offset_bottom = 166.0
 theme_override_fonts/font = ExtResource("8_0jrni")
 theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Dinheiro" type="Label" parent="Game_manager"]
-offset_left = 75.0
-offset_top = 12.0
-offset_right = 306.0
-offset_bottom = 52.0
+offset_left = 61.0
+offset_top = 10.0
+offset_right = 222.0
+offset_bottom = 50.0
 theme_override_fonts/font = ExtResource("8_0jrni")
 theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
